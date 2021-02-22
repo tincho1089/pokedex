@@ -1,0 +1,112 @@
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+
+#pokemonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1% auto auto auto;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+  }
+
+#imglogo {
+    margin: auto;
+    justify-content: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+
+.pokemonNames {
+    font-family: 'Akaya Kanadaka', cursive;
+    font-size: xx-large;
+}
+
+.pokemonDetail {
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: x-large;
+}
+
+.pokemon:hover {
+    box-shadow: 0 0 0 2px inset, 0 0 2px grey, 0 0 5px grey inset;
+  }
+  
+.pokemon:hover::after {
+opacity: 0;
+transition: opacity .5s;
+}
+
+#imglogo:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+.imgPokemon:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+
+
+.divSvg {
+    position: relative;
+    overflow: none;
+    display: inline-block;
+    width:  488px;
+    height: auto ; 
+    z-index: 99;
+}
+
+.rowStat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto; 
+    z-index: 100;
+}
+
+.boxType {
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  opacity: 0.7;
+}
+
+hr {
+  border-top: 1px solid #E1DEDE;
+  width: 90%;
+}
